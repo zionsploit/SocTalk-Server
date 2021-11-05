@@ -1,0 +1,25 @@
+@api = http://localhost:5500
+
+POST {{api}}/register
+Content-Type: application/json
+
+{
+    "email": "admin@email.com",
+    "pass": "mypassword"
+}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "mypassword"
+}
+
+###
+GET {{api}}
+
+###
+GET {{api}}/getData
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE2MzQ3MjcxMDJ9.hzxu7laMii_dwOCm0JTzchrGwcX_u2Iwy6TP4gIodjM
